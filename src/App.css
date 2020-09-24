@@ -16,8 +16,9 @@ html {
   height: 800px;
   border-radius: 20px;
   overflow: scroll;
-  width: 80%;
-  max-width: 500px;
+  width: 500px;
+  max-height: 90vh;
+  max-width: 60vh;
   scroll-snap-type: y mandatory;
 }
 
@@ -30,4 +31,11 @@ html {
 .app_videos {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@media screen and (max-width: 760px) {
+  .app_videos {
+    height: 100vh;
+    width: 100vw;
+  }
 }
